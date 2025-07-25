@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Nav";
+import Nav from "./components/ui/Nav";
+import StoreProvider from "./utils/StoreProvider";
 
 const redHat = Red_Hat_Display({
   subsets: ["latin"],
@@ -22,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${redHat.variable} antialiased bg-white`}>
+      <body
+        className={`${redHat.variable} antialiased bg-white p-5 overflow-hidden`}
+      >
         <Nav />
-        {children}
+        <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
   );
