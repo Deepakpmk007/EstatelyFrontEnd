@@ -8,14 +8,14 @@ export default function UserDashBoard() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Profile", path: "/user/profile" },
-    { name: "My Properties", path: "/user/properties" },
-    { name: "Settings", path: "/user/settings" },
-    { name: "Notifications", path: "/user/notifications" },
+    { name: "Profile", path: "/user/dashboard/profile" },
+    { name: "My Properties", path: "/user/dashboard/properties" },
+    { name: "Settings", path: "/user/dashboard/settings" },
+    { name: "Notifications", path: "/user/dashboard/notifications" },
   ];
 
   return (
-    <nav className="h-full w-[15%] bg-secondary p-3 flex flex-col gap-6">
+    <nav className="h-full w-[15%] bg-secondary p-3 hidden md:flex flex-col gap-6">
       <h1 className="text-2xl font-extrabold">DashBoard</h1>
       <ul className="flex flex-col gap-4 text-xl font-bold">
         {navItems.map((item) => (

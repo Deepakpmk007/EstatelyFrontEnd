@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@imagekit/next": "^2.1.2",
     "@reduxjs/toolkit": "^2.8.2",
     "@types/leaflet": "^1.9.20",
     "axios": "^1.10.0",
