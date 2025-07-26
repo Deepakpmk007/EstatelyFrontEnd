@@ -35,7 +35,7 @@ export default function page() {
     <div className="w-full h-[70svh] flex items-center justify-center gap-10 flex-col ">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-3 w-full border-[1px] px-2 py-20 rounded"
+        className="flex flex-col items-center justify-center gap-3 md:border-[1px] px-2 py-20 rounded md:w-[600px]"
       >
         <CiLogin className="text-4xl" />
         <h1 className="font-semibold text-xl tracking-wider">
@@ -45,7 +45,7 @@ export default function page() {
           type="email"
           placeholder="Enter your email"
           className="bg-secondary p-2 rounded
-           outline-none"
+           outline-none md:w-[400px]"
           onChange={(e) =>
             setEnterData({ ...enterData, email: e.target.value })
           }
@@ -53,7 +53,7 @@ export default function page() {
         <input
           type="password"
           placeholder="Enter your password"
-          className="bg-secondary p-2 rounded
+          className="bg-secondary p-2 rounded md:w-[400px]
            outline-none"
           onChange={(e) =>
             setEnterData({ ...enterData, password: e.target.value })

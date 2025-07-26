@@ -15,7 +15,10 @@ export default function Nav() {
       >
         Estately
       </Link>
-      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-2xl">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="md:hidden text-2xl mr-4"
+      >
         {isOpen ? <RiCloseFill /> : <RiMenu3Fill />}
       </button>
       <div className="hidden md:flex gap-10 items-center text-xl font-light">
